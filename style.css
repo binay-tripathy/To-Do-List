@@ -1,17 +1,34 @@
-#heading {
-    font-size: 5rem;
-}
 
 section {
     background-image: linear-gradient(100deg, #1d292e, #7e7e7e);
     overflow-x: hidden;
 }
 
+#heading {
+    font-size: 5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 5.5s,
+        blink-caret 1s;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
 .form-control::placeholder {
     color: white !important;
 }
 
-.tasks{
+.tasks {
     margin-left: 3rem;
 }
 
@@ -19,7 +36,7 @@ section {
     text-decoration: line-through;
 }
 
-.item-value{
+.item-value {
     /* border: 1px solid black; */
     border-radius: 2rem;
     padding: 1rem 0;
@@ -31,10 +48,9 @@ section {
 .item-btn {
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     /* border: 1px solid black; */
     border-radius: 2rem;
     background-color: #7e7e7e;
     padding: 1rem 0;
 }
-

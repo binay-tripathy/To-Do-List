@@ -15,7 +15,7 @@ input.addEventListener("keypress", function (event) {
 addBtn.addEventListener("click", () => {
     if (input.value.trim() != 0) {
         let newItem = document.createElement("div");
-        newItem.classList.add("item");
+        newItem.classList.add("item"); 
         newItem.classList.add("row");
         newItem.classList.add("mt-3");
         newItem.classList.add("pt-3");
